@@ -1,0 +1,6 @@
+venv/
+build/
+dist/
+whopy.egg-info/
+
+test.py
