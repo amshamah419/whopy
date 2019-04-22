@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name='whopy',
-      version='1.0.1',
+      version='1.0.2',
       description='Provides Whois data for domains.',
       author='Andrew Shamah',
       author_email='amshamah@gmail.com',
