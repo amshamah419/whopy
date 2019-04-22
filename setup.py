@@ -1,8 +1,8 @@
 from setuptools import setup
 
 setup(name='whopy',
-      version='0.1.1',
-      description='Module for retrieving and parsing the WHOIS data for a domain. Supports most domains.',
+      version='1.0.1',
+      description='Provides Whois data for domains.',
       author='Andrew Shamah',
       author_email='amshamah@gmail.com',
       url='https://github.com/amshamah419/whopy',
