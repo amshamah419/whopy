@@ -295,7 +295,8 @@ registrant_regexes = [
     "owner:\s+(?P<name>.+)",  # .br
     "person:\s+(?P<name>.+)",  # nic.ru (person)
     "org:\s+(?P<organization>.+)",  # nic.ru (organization)
-	"Registrant:\n\t(?P<organization>.+)\n\t(?P<organization2>.+)\n\t(?P<street>.*)\n\t(?P<city>.+), (?P<state>.*) (?P<postalcode>.+)\n\t(?P<country>.+)" # EDU domains
+	"Registrant:\n\t(?P<organization>.+)\n\t(?P<organization2>.+)\n\t(?P<street>.*)\n\t(?P<city>.+), (?P<state>.*) (?P<postalcode>.+)\n\t(?P<country>.+)", # EDU domains
+    "Registrant Organization: (?P<organization>.+)\nRegistrant State/Province: (?P<state>.*)\nRegistrant Country: (?P<country>[A-Z]+)"
 ]
 
 tech_contact_regexes = [
@@ -362,6 +363,7 @@ tech_contact_regexes = [
     # HKDNR (.hk)
     "TECH ID:(?P<handle>.+)\nTECH Name:(?P<name>.*)\n(?:TECH Organization:(?P<organization>.*)\n)?TECH Street1:(?P<street1>.+?)\n(?:TECH Street2:(?P<street2>.+?)\n(?:TECH Street3:(?P<street3>.+?)\n)?)?TECH City:(?P<city>.+)\nTECH State:(?P<state>.*)\nTECH Postal Code:(?P<postalcode>.+)\nTECH Country:(?P<country>[A-Z]+)\nTECH Phone:(?P<phone>.*?)\nTECH Fax:(?P<fax>.*)\nTECH Email:(?P<email>.+)\n",
     # Realtime Register
+    "Tech Organization: (?P<organization>.*)\nTech State/Province: (?P<state>.+)\nTech Country: (?P<country>.+)"
 
 ]
 
@@ -412,6 +414,7 @@ admin_contact_regexes = [
     # HKDNR (.hk)
     "ADMIN ID:(?P<handle>.+)\nADMIN Name:(?P<name>.*)\n(?:ADMIN Organization:(?P<organization>.*)\n)?ADMIN Street1:(?P<street1>.+?)\n(?:ADMIN Street2:(?P<street2>.+?)\n(?:ADMIN Street3:(?P<street3>.+?)\n)?)?ADMIN City:(?P<city>.+)\nADMIN State:(?P<state>.*)\nADMIN Postal Code:(?P<postalcode>.+)\nADMIN Country:(?P<country>[A-Z]+)\nADMIN Phone:(?P<phone>.*?)\nADMIN Fax:(?P<fax>.*)\nADMIN Email:(?P<email>.+)\n",
     # Realtime Register
+    "Admin Organization: (?P<name>.*)\nAdmin State/Province: (?P<state>.+)\nAdmin Country: (?P<country>.+)\n"
 ]
 
 billing_contact_regexes = [
